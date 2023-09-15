@@ -21,7 +21,12 @@
 <body>
 
 
-
+  <div class="errDiv" id="errDiv">
+    <div class="err">
+      <h2>An unforeseen error has occurred. Kindly reach out to me via email. <a
+          href="mailto:dhananjaychavan0907@gmail.com">dhananjaychavan0907@gmail.com</a></h2>
+    </div>
+  </div>
 
 
 
@@ -114,7 +119,13 @@
 
 
 
-
+    function err() {
+      const errDiv = document.getElementById("errDiv")
+      errDiv.classList.add("showMsg")
+      setTimeout(() => {
+        errDiv.classList.remove("showMsg")
+      }, 3000)
+    }
 
 
 
