@@ -21,12 +21,6 @@
 <body>
 
 
-  <div class="errDiv" id="errDiv">
-    <div class="err">
-      <h2>An unforeseen error has occurred. Kindly reach out to me via email. <a
-          href="mailto:dhananjaychavan0907@gmail.com">dhananjaychavan0907@gmail.com</a></h2>
-    </div>
-  </div>
 
 
 
@@ -94,7 +88,7 @@
         <br>
         <input type="email" name="" id="" placeholder="Email Address" class="mail"><br>
         <textarea name="" id="" placeholder="How can I help you?" class="msg"></textarea><br>
-        <a href="#" class="btn" onclick="err()">Send ></a>
+        <a href="#" class="btn disabled">Send ></a>
       </form>
 
     </div>
@@ -119,13 +113,7 @@
 
 
 
-    function err() {
-      const errDiv = document.getElementById("errDiv")
-      errDiv.classList.add("showMsg")
-      setTimeout(() => {
-        errDiv.classList.remove("showMsg")
-      }, 3000)
-    }
+
 
 
 
