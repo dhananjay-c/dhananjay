@@ -88,7 +88,10 @@
         <br>
         <input type="email" name="" id="" placeholder="Email Address" class="mail"><br>
         <textarea name="" id="" placeholder="How can I help you?" class="msg"></textarea><br>
+         <p class="errMsg" id="err">Apologies, Unexpected error accured. Please reach out to me via email <a
+            href="mailto:dhananjaychavan0907@gmail.com" target="_blank">dhananjaychavan0907@gmail.com</a></p>
         <a href="#" class="btn disabled">Send ></a>
+        <a class="btn" onclick="err()" id="send">Send ></a>
       </form>
 
     </div>
@@ -113,7 +116,13 @@
 
 
 
-
+  function err() {
+      let err = document.getElementById("err")
+      err.style.display = "block"
+      setTimeout(() => {
+        err.style.display = "none"
+      }, 2000)
+    }
 
 
 
