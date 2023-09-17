@@ -169,8 +169,8 @@ nav {
     padding: .5vmax 1vmax;
     padding: 15px 25px;
     background-color: white;
-
-
+    
+    cursor: pointer;
     margin-top: 2vmax;
 
     text-transform: uppercase;
@@ -668,6 +668,18 @@ footer {
 
 
 
-.disabled {
-    cursor: not-allowed;
+/* ==================================== */
+
+.errMsg {
+    margin-top: 1vmax;
+    line-height: 1.4vmax;
+    color: red;
+    font-weight: 500;
+    font-size: 1vmax;
+    display: none;
+}
+
+
+.errMsg a {
+    text-decoration: underline;
 }
